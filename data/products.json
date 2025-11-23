@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "produto_teste",
+        "price": 0,
+        "quantity": 0,
+        "description": "descrição_teste",
+        "images": [
+            "/static/image/produto1.jpg",
+            "/static/image/produto1_2.jpg",
+            "/static/image/produto1_3.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "sasaas",
+        "price": 2121.0,
+        "quantity": 3,
+        "description": "tung tung sahur",
+        "images": [
+            "product_2_Screenshot-2025-11-21-at-00-48-15-Untitled-Diagram-draw.io.png"
+        ]
+    }
+]

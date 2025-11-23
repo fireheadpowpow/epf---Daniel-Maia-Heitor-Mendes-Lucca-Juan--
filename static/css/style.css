@@ -1,0 +1,19 @@
+header{
+    background-color: transparent;
+    padding-top: 0px;
+}
+.inicio h1{
+    font-size: 100px;
+    text-align: center;
+}
+.inicio h2{
+    font-size: 35px;
+    text-align: center;
+}
+body{
+    background-image: url(../images/capa_body.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
