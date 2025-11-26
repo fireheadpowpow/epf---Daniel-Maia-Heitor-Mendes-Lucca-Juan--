@@ -19,12 +19,12 @@
     position: absolute;
     width: 400px;
     height: 250px;
-    top: 20px;
-    left: 0px;
+    top: 30px;
+    margin-left: -20px;
     background-color: transparent;
 }
 .inicio h1{
-    margin-top: 2;
+    margin-top: 160px;
     font-family: Honk;
     font-size: 150px;
     text-align: center;
@@ -32,61 +32,26 @@
     text-shadow: 20px 20px 25px #913f83;
 }
 .inicio h2{
+    font-family: Orbitron;
     text-align: center;
-    padding-top: 0px;
+    margin-top: -55px;
     padding-bottom: 14px;
-    color: #e2e28d;
-    text-shadow: 5px 5px 10px #777718;
+    color: #e4e408;
+    text-shadow: 0px 0px 40px #f8f800;
 }
 .inicio h3{
     padding-bottom: 100px;
-    font-family: Orbitron;
-    font-size: 35px;
+    font-family: Honk;
+    font-size: 50px;
     text-align: center;
     color: #e2e28d;
     text-shadow: 5px 5px 10px #777718;
 }
 body{
-    background-image: url(../images/capa_body.jpg);
+    background-image: linear-gradient(rgba(74, 1, 122, 0.493), rgba(34, 0, 56, 0.39), rgba(36, 2, 75, 0.705)), url(../images/capa_body.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 /*Fim do Header e do Body padrão*/
-/* Linha de código css da mainPage sahurproducts */
-section.products h2{
-    color: #ff00ff;
-    text-shadow: 5px 5px 10px rgb(176, 57, 180);
-}
-section.products p{
-    color: #ff00ff;
-    text-shadow: 5px 5px 10px rgb(176, 57, 180);
-}
-section.products{
-  display: flex; 
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 8px; 
-  padding: 5px;
-  width: 100%;
-  margin: 0 auto;
-}
-section.products .carroselProducts{
-    margin: 0;
-    width: 400px;
-    height: 400px;
-    padding: 20px;
-    border: 1px solid #777718;
-    border-radius: 10px;
-    background-color: #ff00ff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-section.nex
-section.products .imagesContainer{
-    margin: 20px;
-    position: relative;
-    width: 400px;
-    height: 400px;
-
-}

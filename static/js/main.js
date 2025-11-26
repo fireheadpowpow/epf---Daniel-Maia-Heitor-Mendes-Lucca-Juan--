@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
 
 });
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Seleciona todos os contêineres de carrossel na página
     const carrossels = document.querySelectorAll('.image-carrossel');

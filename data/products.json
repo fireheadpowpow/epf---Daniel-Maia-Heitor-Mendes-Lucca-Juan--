@@ -1,17 +1,5 @@
 [
     {
-        "id": 1,
-        "name": "produto_teste",
-        "price": 0,
-        "quantity": 0,
-        "description": "descrição_teste",
-        "images": [
-            "/static/image/produto1.jpg",
-            "/static/image/produto1_2.jpg",
-            "/static/image/produto1_3.jpg"
-        ]
-    },
-    {
         "id": 2,
         "name": "sasaas",
         "price": 2121.0,
@@ -19,6 +7,46 @@
         "description": "tung tung sahur",
         "images": [
             "product_2_Screenshot-2025-11-21-at-00-48-15-Untitled-Diagram-draw.io.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "tralalero tralala",
+        "price": 500.0,
+        "quantity": 5,
+        "description": "rerere",
+        "images": [
+            "product_3_Screenshot-from-2025-11-21-19-57-45.png"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "ds",
+        "price": 321.0,
+        "quantity": 123,
+        "description": "rsadasd",
+        "images": [
+            "product_4_Screenshot-from-2025-11-23-19-19-52.png"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "ewew",
+        "price": 1212.0,
+        "quantity": 1212,
+        "description": "fsdsfd",
+        "images": [
+            "product_5_Screenshot-from-2025-11-20-23-11-15.png"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "dssd",
+        "price": 312.0,
+        "quantity": 31,
+        "description": "sfdsfda",
+        "images": [
+            "product_6_Screenshot-from-2025-11-20-23-11-15.png"
         ]
     }
 ]

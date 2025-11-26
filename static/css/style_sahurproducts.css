@@ -1,0 +1,77 @@
+/* Linha de código css da mainPage sahurproducts */
+section.products h2{
+    background-image: linear-gradient(to right, #ffffff 0%, #ffff00 5%, #bd0e0e 10%, #ffffff 15%, #ffff00 20%, #bd0e0e 25%, #ffffff 30%, #ffff00 35%, #bd0e0e 40%, #ffffff 45%, #ffff00 50%, #bd0e0e 55%, #ffffff 60%, #ffff00 65%, #bd0e0e 70%, #ffffff 75%, #ffff00 80%, #bd0e0e 85%, #ffffff 90%, #ffff00 95%, #bd0e0e 100%);
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgb(205, 255, 25);
+}
+section.products p.price{
+    color: #15ff00;
+    text-shadow: 0 0 12px rgb(205, 255, 25);
+}
+section.products p.quantity{
+    color: #15ff00;
+    text-shadow: 0 0 12px rgb(205, 255, 25);
+}
+section.products{
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 40px; 
+  padding: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+section.products .image-carrossel{
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    width: 380px;
+    height: 450px;
+    padding: 10px;
+    border: 1px solid #777718;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(11, 0, 58), rgb(26, 1, 37), rgb(5, 0, 5));
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+
+}
+section.products .product-link:hover{
+    box-shadow: 0 0 30px #777718;
+}
+section.products .slides-container{
+    margin: 20px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+
+section.slides-container {
+    display: flex; 
+    transition: transform 0.5s ease-in-out;
+}
+
+
+section.slide {
+    flex-shrink: 0; 
+    width: 300px;
+    height: 300px; 
+}
+
+
+section.slide img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    height: 300px;
+    display: block;
+}

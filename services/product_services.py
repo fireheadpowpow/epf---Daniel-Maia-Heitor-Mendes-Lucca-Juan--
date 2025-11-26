@@ -3,21 +3,21 @@ from models.product import ProductModel, Product
 
 class ProductService:
     def __init__(self):
+    
         self.product_model = ProductModel()
-
+        
     def get_all(self):
         return self.product_model.get_all()
 
-    def save(self):
-        last_id = max([a.id for a in self.product_model.get_all()], default=0)
+    def create_product(self, product_model, forms, files):
+        last_id = max([a.id for a in product_model.get_all()], default=0)
         new_id = last_id + 1
 
-        name = request.forms.get('name')
-        price = float(request.forms.get('price'))
-        quantity = int(request.forms.get('quantity'))
-        description = request.forms.get('description')
+        name = forms.get('name')
+        price = float(forms.get('price')) 
+        quantity = int(forms.get('quantity'))
+        description = forms.get('description')
 
-    # Receber até 3 arquivos
         images = request.files.getall('images')
 
         saved_images = []
@@ -51,3 +51,6 @@ class ProductService:
 
     def delete(self, product_id):
         self.product_model.delete(product_id)
+
+    def detail(self, product_id):
+        return self.get_by_id(product_id)
