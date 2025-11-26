@@ -15,6 +15,12 @@
             <input type="email" id="email" name="email" required 
                    value="{{user.email if user else ''}}">
         </div>
+
+        <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required 
+                   value="{{user.password if user else ''}}">
+        </div>
         
         <div class="form-group">
             <label for="birthdate">Data de Nascimento:</label>
@@ -24,7 +30,7 @@
         
         <div class="form-actions">
             <button type="submit" class="btn-submit">Salvar</button>
-            <a href="/users" class="btn-cancel">Voltar</a>
+            <a href="/sahurproducts" class="btn-cancel">Voltar</a>
         </div>
     </form>
 </section>

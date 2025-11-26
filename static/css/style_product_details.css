@@ -1,7 +1,7 @@
 /* Linha de código css da page details dos produtos */
 section.productsdetails h2{
     background-image: linear-gradient(to right, #ffffff 0%, #ffff00 5%, #bd0e0e 10%, #ffffff 15%, #ffff00 20%, #bd0e0e 25%, #ffffff 30%, #ffff00 35%, #bd0e0e 40%, #ffffff 45%, #ffff00 50%, #bd0e0e 55%, #ffffff 60%, #ffff00 65%, #bd0e0e 70%, #ffffff 75%, #ffff00 80%, #bd0e0e 85%, #ffffff 90%, #ffff00 95%, #bd0e0e 100%);
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     -webkit-background-clip: text;
     background-clip: text;
@@ -9,14 +9,26 @@ section.productsdetails h2{
     color: transparent;
     color: #ffffff;
     text-shadow: 0 0 15px rgb(205, 255, 25);
+    text-align: center;
+    padding: 20px;
 }
 section.productsdetails p.price{
     color: #15ff00;
     text-shadow: 0 0 12px rgb(205, 255, 25);
+    text-align: left;
+    margin-left: 20px;
 }
 section.productsdetails p.quantity{
     color: #15ff00;
     text-shadow: 0 0 12px rgb(205, 255, 25);
+    text-align: left;
+    margin-left: 20px;
+}
+section.productsdetails p.description{
+    color: #15ff00;
+    text-shadow: 0 0 12px rgb(205, 255, 25);
+    text-align: left;
+    margin-left: 20px;
 }
 section.productsdetails{
   display: flex; 
@@ -39,9 +51,6 @@ section.productsdetails .image-carrossel{
     background-image: linear-gradient(rgb(11, 0, 58), rgb(26, 1, 37), rgb(5, 0, 5));
     box-shadow: 0 0 15px rgb(0, 0, 0);
 
-}
-section.productsdetails-link :hover{
-    box-shadow: 0 0 150px #777718;
 }
 section.productsdetails .slides-container{
     margin: 20px;
@@ -73,7 +82,14 @@ section.productsdetails .slide img {
     display: block;
 }
 
-section.productsdetails .buy :hover{
-    box-shadow: 0 0 30px #777718;
+section.productsdetails a.buy{
+    position: absolute;
+    color: #15ff00;
+    right: 30px;
+    bottom: 40px;
+    font-family: Orbitron;
+    font-size: 20px;
+    font-weight: bold;
 }
+
 /* fim da page details dos produtos */

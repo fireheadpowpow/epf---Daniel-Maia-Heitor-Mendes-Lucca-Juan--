@@ -19,16 +19,30 @@
 
 
 </head>
+
 <header>
+
     <div class ="logo">
-        <img src="../static/images/sahurLogo.png" alt="">
+        <img src="/static/images/sahurLogo.png" alt="">
     </div>
+
+    <nav class="menu_navegacao">
+        <ul class="menu-list">
+            <li><a href="/sahurproducts">Produtos</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/users/add" class="cart">Conta</a></li>
+        </ul>
+    </nav>
+
     <div class ="inicio">
         <h1>SAHUR</h1>
         <h2>NEGÓCIOS SAHUR  <i class="bi bi-briefcase-fill"></i></h2>
         <h3>Adquira os Brainrots mais cobiçados com apenas um clique</h3>
     </div>
+
 </header>
+
 <body>
 
     <div class="container">

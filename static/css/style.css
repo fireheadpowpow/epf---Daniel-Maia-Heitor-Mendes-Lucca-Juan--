@@ -53,5 +53,41 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding: 0;
+    margin: 0;
 }
-/*Fim do Header e do Body padrão*/
+
+.menu_navegacao {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center center; 
+    max-width: 1200px; 
+    margin-left: 725px;
+    margin-top: 40px;
+}
+
+
+.menu-list {
+    display: flex;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-left: 20px; 
+}
+.menu_navegacao a {
+    color: rgb(255, 251, 0); 
+    text-shadow: 0 0 17px rgb(139, 139, 6);
+    text-decoration: none; 
+    padding: 5px 0;
+    transition: color 0.3s; 
+    font-size: 25px;
+}
+
+.menu_navegacao a:hover {
+    text-shadow: 0 0 30px #00ff00;
+    color: #00ff00;
+}
+

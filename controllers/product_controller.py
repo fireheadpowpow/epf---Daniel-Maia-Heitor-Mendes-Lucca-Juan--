@@ -71,7 +71,7 @@ class ProductController(BaseController):
         if not product:
             return "Produto não encontrado." 
         
-        if product.quantity > 0:
+        if int(product.quantity) > 0:
             return self.render('product_details', product=product)
         
         return self.render('product_details', product=product, status_msg=mensagem_status)

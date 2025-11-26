@@ -1,2 +1,3 @@
+# Python 3.9.25 - Oct. 31, 2025 (Não é obrigatório mas foi a versão usada pelo grupo)
 bottle
 Pillow

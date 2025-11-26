@@ -3,7 +3,7 @@
 <section class="products">
   % for p in products:
     
-  <a href="/productsdetails/{{p.id}}" class="product-link">
+   <a href="/productsdetails/{{p.id}}" class="product-link">
     <div class="image-carrossel"> 
         
         <h2>{{p.name}}</h2>
@@ -13,7 +13,6 @@
         
 
         % if p.images:
-        <button class="prev-btn" data-product-id="{{p.id}}">❮</button>
         
             <div class="slides-container"> 
                 % for img in p.images:
@@ -23,12 +22,13 @@
                 % end
             </div>
             
-        <button class="next-btn" data-product-id="{{p.id}}">❯</button>
+        
         % else:
             <p><i>Sem imagens</i></p>
         % end
     </div>
     </a>
+    
     
 
 % end

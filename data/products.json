@@ -11,10 +11,10 @@
     },
     {
         "id": 3,
-        "name": "tralalero tralala",
-        "price": 500.0,
-        "quantity": 5,
-        "description": "rerere",
+        "name": "sahur",
+        "price": "12",
+        "quantity": "123123",
+        "description": "fdsfdfsd",
         "images": [
             "product_3_Screenshot-from-2025-11-21-19-57-45.png"
         ]

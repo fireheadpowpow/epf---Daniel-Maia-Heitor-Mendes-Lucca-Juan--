@@ -16,6 +16,7 @@
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
+                    <th>Senha</th>
                     <th>Data Nasc.</th>
                     <th>Ações</th>
                 </tr>
@@ -27,6 +28,7 @@
                     <td>{{u.id}}</td>
                     <td>{{u.name}}</td>
                     <td><a href="mailto:{{u.email}}">{{u.email}}</a></td>
+                    <td>{{u.password}}</td>
                     <td>{{u.birthdate}}</td>
                     
                     <td class="actions">
