@@ -63,7 +63,10 @@ class ProductModel:
                 self.products[i] = updated_product
                 self._save()
                 break
+        
 
     def delete(self, products_id):
         self.products = [a for a in self.products if a.id != products_id]
         self._save()
+
+   

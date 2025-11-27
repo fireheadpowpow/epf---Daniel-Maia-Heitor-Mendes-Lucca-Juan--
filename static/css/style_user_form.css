@@ -1,4 +1,4 @@
-.product_form_container{
+.user_form_container{
     background-image: url(/static/images/capa3.jpg);
     background-size: cover;
     background-position: center top;
@@ -9,20 +9,25 @@
     margin: 0 auto;
  
 }
-section.product_form h1{
+section.form-section h1{
     text-align: center;
     font-family: Orbitron;
     color: #3cff00;
     padding: 50px;
 }
-section.product_form form{
+section.form-section form{
     text-align: center;
     font-family: Orbitron;
     color: #3cff00;
-    padding: 15px;
 }
-section.product_form form .voltar{
-    margin-left: 15px;
-    font-family: Orbitron;
+section.form-section form .form-group{
+    padding: 25px;
+}
+
+.user_form_container .form-container .form-actions a{
     color: #ff0000;
-}
+    margin-left: 15px;
+ }
+ .user_form_container .form-container .form-actions button{
+    margin-top: 20px;
+ }

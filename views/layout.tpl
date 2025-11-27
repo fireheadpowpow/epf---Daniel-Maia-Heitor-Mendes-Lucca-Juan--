@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="/static/css/style_sahurproducts.css">
     <link rel="stylesheet" href="/static/css/style_product_details.css">
     <link rel="stylesheet" href="/static/css/style_product_form.css">
+    <link rel="stylesheet" href="/static/css/info.css">
+    <link rel="stylesheet" href="/static/css/style_user_form.css">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,16 +30,17 @@
 
     <nav class="menu_navegacao">
         <ul class="menu-list">
-            <li><a href="/sahurproducts">Produtos</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/contato">Contato</a></li>
-            <li><a href="/users/add" class="cart">Conta</a></li>
+            <li><a href="/sahurhomepage">Produtos <i class="bi bi-cart-fill"></i></a></li>
+            <li><a href="https://wa.me/5561993187723">Contato <i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="/users/add" class="cart">Conta <i class="bi bi-person-circle"></i></a></li>
         </ul>
     </nav>
 
     <div class ="inicio">
         <h1>SAHUR</h1>
-        <h2>NEGÓCIOS SAHUR  <i class="bi bi-briefcase-fill"></i></h2>
+        <div class ="subtitulo">
+        <a href="/sahur.info">NEGÓCIOS SAHUR <i class="bi bi-info-circle-fill"></i></a>
+        </div>
         <h3>Adquira os Brainrots mais cobiçados com apenas um clique</h3>
     </div>
 

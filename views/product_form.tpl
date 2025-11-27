@@ -1,6 +1,7 @@
 % rebase('layout.tpl', title='Novo Produto')
 
 <section class="product_form">
+<div class="product_form_container"> 
 <h1>Novo Produto</h1>
 <form action="{{action}}" method="post" enctype="multipart/form-data">
     <label>Nome:<br>
@@ -19,6 +20,7 @@
         <input type="file" name="images[]" multiple accept="image/*" required>
     </label><br><br>
     <button type="submit">Salvar</button>
+    <a href="/sahurhomepage" class="voltar">Voltar</a>
 </form>
-<a href="/sahurproducts">Voltar</a>
+</div>  
 </section>

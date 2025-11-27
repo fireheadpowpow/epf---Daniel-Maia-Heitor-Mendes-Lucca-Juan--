@@ -13,11 +13,13 @@ class ProductController(BaseController):
     
     
     def setup_routes(self):
-        self.app.route('/sahurproducts', method='GET', callback=self.list_products)
+        self.app.route('/sahurhomepage', method='GET', callback=self.list_products)
         self.app.route('/products/add', method=['GET', 'POST'], callback=self.add_product)
         self.app.route('/products/edit/<product_id:int>', method=['GET', 'POST'], callback=self.edit_product)
         self.app.route('/products/delete/<product_id:int>', method='POST', callback=self.delete_products)
         self.app.route('/productsdetails/<product_id:int>', method='GET', callback=self.detail_products)
+
+        
 
        
     
@@ -33,7 +35,7 @@ class ProductController(BaseController):
         
         try:
             self.product_service.create_product(self.product_model, request.forms, request.files)
-            return self.redirect('/sahurproducts')
+            return self.redirect('/sahurhomepage')
 
         except (ValueError, TypeError) as e:
             context = {
@@ -57,11 +59,11 @@ class ProductController(BaseController):
             return self.render('product_form', product=product, action=f'/products/edit/{product_id}')
         else:
             self.product_service.edit(product)
-            self.redirect('/sahurproducts')
+            self.redirect('/sahurhomepage')
 
     def delete_products(self, product_id):
         self.product_service.delete(product_id)
-        self.redirect('/sahurproducts')
+        self.redirect('/sahurhomepage')
 
     
     def detail_products(self, product_id):
@@ -76,6 +78,7 @@ class ProductController(BaseController):
         
         return self.render('product_details', product=product, status_msg=mensagem_status)
     
+       
 
 product_routes = Bottle()
 product_controller = ProductController(product_routes)

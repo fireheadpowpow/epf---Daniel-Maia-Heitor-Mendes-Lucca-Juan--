@@ -1,6 +1,7 @@
 % rebase('layout', title='Formulário Usuário')
 
 <section class="form-section">
+    <div class="user_form_container">
     <h1>{{'Editar Usuário' if user else 'Adicionar Usuário'}}</h1>
     
     <form action="{{action}}" method="post" class="form-container">
@@ -33,4 +34,5 @@
             <a href="/sahurproducts" class="btn-cancel">Voltar</a>
         </div>
     </form>
+    </div>
 </section>
