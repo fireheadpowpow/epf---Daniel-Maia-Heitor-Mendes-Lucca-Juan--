@@ -1,52 +1,52 @@
 [
     {
         "id": 2,
-        "name": "sasaas",
-        "price": 2121.0,
-        "quantity": 3,
-        "description": "tung tung sahur",
+        "name": "brr brr patapim",
+        "price": 70.0,
+        "quantity": 37,
+        "description": "O guardião da floresta brr brr",
         "images": [
-            "product_2_Screenshot-2025-11-21-at-00-48-15-Untitled-Diagram-draw.io.png"
+            "Captura de tela 2025-11-30 102529.png"
         ]
     },
     {
         "id": 3,
-        "name": "sahur",
-        "price": "12",
-        "quantity": "123123",
-        "description": "fdsfdfsd",
+        "name": "tung tung sahur",
+        "price": 90.0,
+        "quantity": 30,
+        "description": "Sahur do porrete",
         "images": [
-            "product_3_Screenshot-from-2025-11-21-19-57-45.png"
+            "Captura de tela 2025-11-30 095609.png"
         ]
     },
     {
         "id": 4,
-        "name": "ds",
-        "price": 321.0,
-        "quantity": 123,
-        "description": "rsadasd",
+        "name": "tralalero tralala shiny (gold)",
+        "price": 500.0,
+        "quantity": 3,
+        "description": "O tubarão tralala gold",
         "images": [
-            "product_4_Screenshot-from-2025-11-23-19-19-52.png"
+            "Captura de tela 2025-11-30 103020.png"
         ]
     },
     {
         "id": 5,
-        "name": "ewew",
-        "price": 1212.0,
-        "quantity": 1212,
-        "description": "fsdsfd",
+        "name": "lirili larila",
+        "price": 80.0,
+        "quantity": 28,
+        "description": "elefante desértico senhor do tempo",
         "images": [
-            "product_5_Screenshot-from-2025-11-20-23-11-15.png"
+            "Captura de tela 2025-11-30 103535.png"
         ]
     },
     {
         "id": 6,
-        "name": "dssd",
-        "price": 312.0,
+        "name": "bombardiro crocodilo",
+        "price": 75.0,
         "quantity": 31,
-        "description": "sfdsfda",
+        "description": "arma de guerra e matança, sedento por sangue",
         "images": [
-            "product_6_Screenshot-from-2025-11-20-23-11-15.png"
+            "Captura de tela 2025-11-30 103818.png"
         ]
     }
 ]
