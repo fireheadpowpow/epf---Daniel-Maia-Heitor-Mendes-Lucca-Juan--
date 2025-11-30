@@ -34,4 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
             document.body.removeChild(messageDiv);
         }, 2000);
     }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> template

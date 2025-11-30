@@ -51,4 +51,6 @@ class UserController(BaseController):
 
 
 user_routes = Bottle()
+
 user_controller = UserController(user_routes)
+

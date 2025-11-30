@@ -16,6 +16,10 @@
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
+<<<<<<< HEAD
+=======
+                    <th>Senha</th>
+>>>>>>> template
                     <th>Data Nasc.</th>
                     <th>Ações</th>
                 </tr>
@@ -27,6 +31,10 @@
                     <td>{{u.id}}</td>
                     <td>{{u.name}}</td>
                     <td><a href="mailto:{{u.email}}">{{u.email}}</a></td>
+<<<<<<< HEAD
+=======
+                    <td>{{u.password}}</td>
+>>>>>>> template
                     <td>{{u.birthdate}}</td>
                     
                     <td class="actions">

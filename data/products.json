@@ -1,0 +1,52 @@
+[
+    {
+        "id": 2,
+        "name": "brr brr patapim",
+        "price": 70.0,
+        "quantity": 37,
+        "description": "O guardião da floresta brr brr",
+        "images": [
+            "Captura de tela 2025-11-30 102529.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "tung tung sahur",
+        "price": 90.0,
+        "quantity": 30,
+        "description": "Sahur do porrete",
+        "images": [
+            "Captura de tela 2025-11-30 095609.png"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "tralalero tralala shiny (gold)",
+        "price": 500.0,
+        "quantity": 3,
+        "description": "O tubarão tralala gold",
+        "images": [
+            "Captura de tela 2025-11-30 103020.png"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "lirili larila",
+        "price": 80.0,
+        "quantity": 28,
+        "description": "elefante desértico senhor do tempo",
+        "images": [
+            "Captura de tela 2025-11-30 103535.png"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "bombardiro crocodilo",
+        "price": 75.0,
+        "quantity": 31,
+        "description": "arma de guerra e matança, sedento por sangue",
+        "images": [
+            "Captura de tela 2025-11-30 103818.png"
+        ]
+    }
+]

@@ -1,8 +1,22 @@
 [
     {
         "id": 1,
+<<<<<<< HEAD
         "name": "UsuÃ¡rio Teste",
         "email": "uduarioteste@email.com",
         "birthdate": "1999-10-21"
+=======
+        "name": "boi da cara preta",
+        "email": "re@gmail.com",
+        "birthdate": "2000-10-10",
+        "password": "0ZDsaDS10"
+    },
+    {
+        "id": 2,
+        "name": "rei tralala",
+        "email": "tralala.king@gmail.com",
+        "birthdate": "2006-12-13",
+        "password": "TRDsaLDsaLDsa"
+>>>>>>> template
     }
 ]

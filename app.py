@@ -25,4 +25,8 @@ class App:
 
 
 def create_app():
+<<<<<<< HEAD
     return App()
+=======
+    return App()
+>>>>>>> template

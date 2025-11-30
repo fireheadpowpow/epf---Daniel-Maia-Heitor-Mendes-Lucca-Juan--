@@ -16,9 +16,17 @@ class UserService:
         new_id = last_id + 1
         name = request.forms.get('name')
         email = request.forms.get('email')
+<<<<<<< HEAD
         birthdate = request.forms.get('birthdate')
 
         user = User(id=new_id, name=name, email=email, birthdate=birthdate)
+=======
+        password = request.forms.get('password')
+        birthdate = request.forms.get('birthdate')
+        
+
+        user = User(id=new_id, name=name, email=email, password = password, birthdate=birthdate)
+>>>>>>> template
         self.user_model.add_user(user)
 
 
@@ -29,14 +37,26 @@ class UserService:
     def edit_user(self, user):
         name = request.forms.get('name')
         email = request.forms.get('email')
+<<<<<<< HEAD
+=======
+        password = request.forms.get('password')
+>>>>>>> template
         birthdate = request.forms.get('birthdate')
 
         user.name = name
         user.email = email
+<<<<<<< HEAD
+=======
+        user.password = password
+>>>>>>> template
         user.birthdate = birthdate
 
         self.user_model.update_user(user)
 
 
     def delete_user(self, user_id):
+<<<<<<< HEAD
         self.user_model.delete_user(user_id)
+=======
+        self.user_model.delete_user(user_id)
+>>>>>>> template

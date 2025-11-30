@@ -16,13 +16,22 @@ class BaseController:
 
 
     def home_redirect(self):
+<<<<<<< HEAD
         """Redireciona a rota raiz para /users"""
         return self.redirect('/users')
+=======
+        """Redireciona a rota raiz para /sahurproducts"""
+        return self.redirect('/sahurproducts')
+>>>>>>> template
 
 
     def helper(self):
         return self.render('helper-final')
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> template
 
     def serve_static(self, filename):
         """Serve arquivos estáticos da pasta static/"""
@@ -49,4 +58,8 @@ class BaseController:
                 body=f'<script>window.location.href="{path}";</script>',
                 status=200,
                 headers={'Content-Type': 'text/html'}
+<<<<<<< HEAD
             )
+=======
+            )
+>>>>>>> template
