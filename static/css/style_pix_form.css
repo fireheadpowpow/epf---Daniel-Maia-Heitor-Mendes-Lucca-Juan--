@@ -1,0 +1,28 @@
+.pix_form_container{
+    background-image: url(/static/images/capa3.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1000px;
+    height: 580px;
+    margin: 0 auto;
+ 
+}
+section.pix_form h1{
+    text-align: center;
+    font-family: Orbitron;
+    color: #3cff00;
+    padding: 50px;
+}
+section.pix_form form{
+    text-align: center;
+    font-family: Orbitron;
+    color: #3cff00;
+    padding: 15px;
+}
+section.pix_form form .voltar{
+    margin-left: 15px;
+    font-family: Orbitron;
+    color: #ff0000;
+}

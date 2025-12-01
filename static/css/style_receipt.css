@@ -1,0 +1,54 @@
+.receipt_container {
+    background-image: url(/static/images/capa3.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1000px;
+    height: 580px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section.receipt-form {
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+    color: #3cff00;
+}
+
+section.receipt-form h1 {
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+    color: #3cff00;
+    padding: 35px 0;
+}
+
+section.receipt-form .form-group {
+    padding: 10px 0;
+}
+
+section.receipt-form .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+section.receipt-form .form-group p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.receipt_container .form-actions {
+    margin-top: 30px;
+}
+
+.receipt_container .form-actions a {
+    color: #913f83;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.receipt_container .form-actions a:hover {
+    text-decoration: underline;
+}

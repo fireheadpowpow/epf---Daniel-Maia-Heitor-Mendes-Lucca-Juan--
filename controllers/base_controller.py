@@ -1,4 +1,5 @@
 from bottle import static_file
+from bottle import request, redirect
 
 class BaseController:
     def __init__(self, app):
@@ -14,15 +15,24 @@ class BaseController:
         # Rota para arquivos estáticos (CSS, JS, imagens)
         self.app.route('/static/<filename:path>', callback=self.serve_static)
 
+    def check_auth(self):
+        """Verifica se a sessão tem o crachá e redireciona se necessário."""
+        
+        session = request.environ.get('beaker.session')
+
+        if not session or not session.get('autenticado'):
+            return redirect('/sahur.login')
+        return True
+
 
     def home_redirect(self):
-        """Redireciona a rota raiz para /users"""
-        return self.redirect('/users')
+        """Redireciona a rota raiz para /sahurhomepage"""
+        return self.redirect('/sahurhomepage')
 
 
     def helper(self):
         return self.render('helper-final')
-
+    
 
     def serve_static(self, filename):
         """Serve arquivos estáticos da pasta static/"""

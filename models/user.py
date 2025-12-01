@@ -6,15 +6,43 @@ from typing import List
 DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
 
 class User:
-    def __init__(self, id, name, email, birthdate):
+    def __init__(self, id, name, email, birthdate, password):
         self.id = id
         self.name = name
         self.email = email
         self.birthdate = birthdate
+        self.password = self.set_password(password)
+
+    
+    def get_password(self):
+        return self.password
+
+    @staticmethod
+    def set_password(newPassword):
+     
+            if not newPassword or len(str(newPassword).strip()) == 0:
+                
+                print("Favor preencher campo 'senha")
+        
+                return
+    
+            try:
+                newPasswordToUpper = newPassword.upper()
+                newPasswordReplaced = newPasswordToUpper.replace('A', 'Dsa')
+                newPasswordReplaced2 = newPasswordReplaced.replace('E', '31C2as')
+                newPasswordReplaced3 = newPasswordReplaced2.replace('I', 'ZAds')
+                newPasswordReplaced4 = newPasswordReplaced3.replace('O', '0')
+                newPasswordReplaced5 = newPasswordReplaced4.replace('U', 'au')
+                newPasswordReplaced6 = newPasswordReplaced5.replace('@', 'l').replace('!', '21').replace('.', '/').replace('c', '.2')
+
+                return newPasswordReplaced6
+
+            except Exception as e:
+                print(f"Erro inesperado ao processar senha: {e}")    
 
 
     def __repr__(self):
-        return (f"User(id={self.id}, name='{self.name}', email='{self.email}', "
+        return (f"User(id={self.id}, name='{self.name}', email='{self.email}',  password= '{self.password}', "
                 f"birthdate='{self.birthdate}'")
 
 
@@ -23,7 +51,8 @@ class User:
             'id': self.id,
             'name': self.name,
             'email': self.email,
-            'birthdate': self.birthdate
+            'birthdate': self.birthdate,
+            'password': self.get_password()
         }
 
 
@@ -33,7 +62,8 @@ class User:
             id=data['id'],
             name=data['name'],
             email=data['email'],
-            birthdate=data['birthdate']
+            birthdate=data['birthdate'],
+            password=data['password']
         )
 
 
@@ -63,6 +93,14 @@ class UserModel:
 
     def get_by_id(self, user_id: int):
         return next((u for u in self.users if u.id == user_id), None)
+    
+
+    def get_by_email_password(self, email, password):
+        user = next((u for u in self.users if u.email == email and u.password == password), None)
+        if user:
+            return True
+        else:
+            return False
 
 
     def add_user(self, user: User):
@@ -78,6 +116,6 @@ class UserModel:
                 break
 
 
-    def delete_user(self, user_id: int):
+    def delete_user(self, user_id):
         self.users = [u for u in self.users if u.id != user_id]
         self._save()

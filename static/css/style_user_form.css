@@ -1,0 +1,33 @@
+.user_form_container{
+    background-image: url(/static/images/capa3.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1000px;
+    height: 580px;
+    margin: 0 auto;
+ 
+}
+section.form-section h1{
+    text-align: center;
+    font-family: Orbitron;
+    color: #3cff00;
+    padding: 50px;
+}
+section.form-section form{
+    text-align: center;
+    font-family: Orbitron;
+    color: #3cff00;
+}
+section.form-section form .form-group{
+    padding: 25px;
+}
+
+.user_form_container .form-container .form-actions a{
+    color: #ff0000;
+    margin-left: 15px;
+ }
+ .user_form_container .form-container .form-actions button{
+    margin-top: 20px;
+ }
