@@ -1,0 +1,130 @@
+
+.users-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Orbitron, sans-serif;
+    color: #3cff00;
+}
+
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #3cff00;
+    text-shadow: 0 0 8px #3cff00;
+}
+
+
+.btn.btn-primary {
+    padding: 10px 20px;
+    background-color: black;
+    border: 2px solid #3cff00;
+    color: #3cff00;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn.btn-primary:hover {
+    background-color: #3cff00;
+    color: black;
+    box-shadow: 0 0 10px #3cff00;
+}
+
+
+.table-container {
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid #3cff00;
+    box-shadow: 0 0 15px #3cff00;
+}
+
+.styled-table thead tr {
+    background-color: black;
+    color: #3cff00;
+    font-size: 18px;
+}
+
+.styled-table th, 
+.styled-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #3cff00;
+}
+
+.styled-table tbody tr:hover {
+    background-color: rgba(60, 255, 0, 0.1);
+}
+
+
+.styled-table a {
+    color: #3cff00;
+    text-decoration: underline;
+}
+
+.styled-table a:hover {
+   background-color: #3cff00;
+   color: black;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+
+.btn-edit {
+    padding: 6px 12px;
+    background-color: black;
+    border: 2px solid #ea00ff;
+    color: #ea00ff;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #ea00ff;
+    color: black;
+    box-shadow: 0 0 10px #ea00ff;
+}
+
+
+.btn-danger {
+    padding: 6px 12px;
+    background-color: black;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #ff0000;
+    color: black;
+    box-shadow: 0 0 10px red;
+}
+
+
+.actions form {
+    display: inline;
+    margin: 0;
+}
+

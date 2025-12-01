@@ -31,7 +31,7 @@
         
         <div class="form-actions">
             <button type="submit" class="btn-submit">Salvar</button>
-            <a href="/sahurproducts" class="btn-cancel">Voltar</a>
+            <a href="/sahurhomepage" class="btn-cancel">Voltar</a>
         </div>
     </form>
     </div>

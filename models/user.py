@@ -17,8 +17,8 @@ class User:
     def get_password(self):
         return self.password
 
-   
-    def set_password(self, newPassword):
+    @staticmethod
+    def set_password(newPassword):
      
             if not newPassword or len(str(newPassword).strip()) == 0:
                 
@@ -93,6 +93,14 @@ class UserModel:
 
     def get_by_id(self, user_id: int):
         return next((u for u in self.users if u.id == user_id), None)
+    
+
+    def get_by_email_password(self, email, password):
+        user = next((u for u in self.users if u.email == email and u.password == password), None)
+        if user:
+            return True
+        else:
+            return False
 
 
     def add_user(self, user: User):
@@ -108,6 +116,6 @@ class UserModel:
                 break
 
 
-    def delete_user(self, user_id: int):
+    def delete_user(self, user_id):
         self.users = [u for u in self.users if u.id != user_id]
         self._save()

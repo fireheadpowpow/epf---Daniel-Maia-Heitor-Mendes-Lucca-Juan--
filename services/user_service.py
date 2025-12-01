@@ -10,7 +10,7 @@ class UserService:
         users = self.user_model.get_all()
         return users
 
-
+    
     def save(self):
         last_id = max([u.id for u in self.user_model.get_all()], default=0)
         new_id = last_id + 1

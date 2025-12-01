@@ -27,7 +27,7 @@
          <p class="price">Preço: {{product.price}}R$</p>
         <p class="quantity">Quantidade: {{product.quantity}}</p>
         <p class="description">Descrição: {{product.description}}</p>
-    <a href="/product.buy/{{product.id}}" class="buy">Comprar <i class="bi bi-coin"></i></a>
+    <a href="/buy/{{product.id}}" class="buy">Comprar <i class="bi bi-coin"></i></a>
     </div>
     
 

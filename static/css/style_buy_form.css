@@ -1,0 +1,127 @@
+.buy_form_container{
+    background-image: url(/static/images/capa3.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1000px;
+    height: 580px;
+    margin: 0 auto;
+ 
+}
+section.buy_form h1{
+    text-align: center;
+    font-family: Orbitron;
+    color: #3cff00;
+    padding: 50px;
+}
+section.buy_form form{
+    
+    margin-left: 30px;
+    font-family: Orbitron;
+    color: #3cff00;
+    padding: 25px;
+}
+section.buy_form form .voltar{
+    margin-left: 15px;
+    font-family: Orbitron;
+    color: #ff0000;
+}
+
+
+section.buy_form h1 {
+    text-align: center;
+    font-family: Orbitron;
+    color: #3cff00;
+    padding: 50px;
+}
+
+
+.form_and_qrcode_wrapper {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    padding: 0 30px; 
+}
+
+
+.form_fields {
+    flex: 1; 
+    min-width: 350px; 
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+.form_fields form {
+    font-family: Orbitron;
+    color: #3cff00;
+}
+
+.qrcode_info {
+    flex: 1; 
+    min-width: 350px; 
+    text-align: center; 
+    padding: 25px;
+    box-sizing: border-box;
+    color: #3cff00; 
+    font-family: Orbitron;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.qrcode_info img {
+    width: 200px; 
+    height: 200px;
+    margin-bottom: 15px; 
+    display: block; 
+    
+}
+
+.qrcode_info p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    max-width: 300px;
+}
+
+
+.qrcode_info h2 {
+    font-size: 1.3em;
+    color: #3cff00;
+    margin-top: 10px;
+}
+
+
+.form_fields input[type="email"],
+.form_fields input[type="password"],
+.form_fields input[type="text"] {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #3cff00; 
+    color: #3cff00; 
+    padding: 8px;
+    width: 250px; 
+    margin-top: 5px;
+}
+
+
+.form_fields button[type="submit"] {
+    background-color: #3cff00; 
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-family: Orbitron;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.form_fields .voltar {
+    font-family: Orbitron;
+    color: #ff0000; 
+    text-decoration: none;
+    margin-top: 20px;
+}

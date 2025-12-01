@@ -57,6 +57,16 @@ class ProductModel:
         self.products.append(product)
         self._save()
 
+    def buy(self, products_id):
+        
+        product_to_buy = self.get_by_id(products_id)
+        if product_to_buy.quantity > 0:
+            product_to_buy.quantity -= 1
+            self._save()
+            return True
+        else:
+            return False
+
     def update(self, updated_product):
         for i, a in enumerate(self.products):
             if a.id == updated_product.id:

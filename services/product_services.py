@@ -1,6 +1,5 @@
 from bottle import request
 from models.product import ProductModel, Product
-
 class ProductService:
     def __init__(self):
     
@@ -9,6 +8,9 @@ class ProductService:
     def get_all(self):
         return self.product_model.get_all()
 
+
+
+        
     def create_product(self, product_model, forms, files):
         last_id = max([a.id for a in product_model.get_all()], default=0)
         new_id = last_id + 1

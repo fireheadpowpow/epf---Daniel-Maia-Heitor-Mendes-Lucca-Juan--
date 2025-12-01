@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="/static/css/style_product_form.css">
     <link rel="stylesheet" href="/static/css/info.css">
     <link rel="stylesheet" href="/static/css/style_user_form.css">
+    <link rel="stylesheet" href="/static/css/secret_key.css">
+    <link rel="stylesheet" href="/static/css/style_product_delete.css">
+    <link rel="stylesheet" href="/static/css/style_buy_form.css">
+    <link rel="stylesheet" href="/static/css/style_pix_form.css">
+    <link rel="stylesheet" href="/static/css/style_users.css">
+    <link rel="stylesheet" href="/static/css/style_receipt.css">
+    <link rel="stylesheet" href="/static/css/style_user_delete.css">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">

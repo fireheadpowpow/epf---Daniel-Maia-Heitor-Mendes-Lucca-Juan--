@@ -15,10 +15,11 @@ class UserController(BaseController):
         self.app.route('/users', method='GET', callback=self.list_users)
         self.app.route('/users/add', method=['GET', 'POST'], callback=self.add_user)
         self.app.route('/users/edit/<user_id:int>', method=['GET', 'POST'], callback=self.edit_user)
-        self.app.route('/users/delete/<user_id:int>', method='POST', callback=self.delete_user)
+        self.app.route('/users/delete/<user_id:int>', method=['GET', 'POST'], callback=self.delete_user)
 
 
     def list_users(self):
+        self.check_auth()
         users = self.user_service.get_all()
         return self.render('users', users=users)
 
@@ -29,10 +30,11 @@ class UserController(BaseController):
         else:
             
             self.user_service.save()
-            self.redirect('/users')
+            self.redirect('/sahurhomepage')
 
 
     def edit_user(self, user_id):
+        self.check_auth()
         user = self.user_service.get_by_id(user_id)
         if not user:
             return "Usuário não encontrado"
@@ -46,9 +48,13 @@ class UserController(BaseController):
 
 
     def delete_user(self, user_id):
-        self.user_service.delete_user(user_id)
-        self.redirect('/users')
-
+          self.check_auth()
+          user = self.user_service.get_by_id(user_id)
+          if request.method == 'GET':
+            return self.render('user_delete_form', user=user, action=f'/users/delete/{user_id}')
+          else:
+            self.user_service.delete_user(user_id)
+            self.redirect('/sahurhomepage')
 
 user_routes = Bottle()
 user_controller = UserController(user_routes)
